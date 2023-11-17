@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeverForgetJS</title>
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-    
+    <header>
+        <hgroup>
+            <h2>Aprimore sua performance,</h2>
+            <h1>Dedique-se ao que realmente importa</h1>
+        </hgroup>
+        <img src="" alt="">
+    </header>
+    <main>
+        <section class="cronometro">
+            <div class="botoes">
+                <button>Foco</button>
+                <button>Descanso Curto</button>
+                <button>Descanso Longo</button>
+            </div>
+            <div>
+                <p id="cronometro"></p>
+                <label class="switch">
+                    <input type="checkbox" id="switch">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+            <button id="comecar">Começar</button>
+            <p>#Em andamento</p>
+        </section>
+        <hr>
+        <section>
+            <div>
+                <h1>Lista de tarefas</h1>
+            </div>
+            <form  id="adicionar">
+                <input type="text" name="adicionar" placeholder="Adicionar tarefa à lista" id="input">
+                <input type="submit" value="+">
+            </form>
+            <ul id="tarefas" class="tarefas">
+                
+            </ul>
+        </section>
+        <section>
+            <div></div>
+            <div></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

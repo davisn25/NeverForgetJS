@@ -1,0 +1,10 @@
+.tarefas {
+    width: 300px;
+    list-style: none;
+}
+
+.tarefas li {
+    display: flex;
+    border-bottom: solid 1px black;
+    justify-content: space-between;
+}
