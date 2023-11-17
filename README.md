@@ -1,2 +1,2 @@
 # NeverForgetJS
-https://prod.liveshare.vsengsaas.visualstudio.com/join?65BF0448C57A44130B219334B14A7F4B8631
+https://prod.liveshare.vsengsaas.visualstudio.com/join?0FF94DBA2ECD2D44A6CDFC30F9E89516A819
