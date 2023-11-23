@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeverForgetJS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
+    <title>NeverForgetJS</title>
 </head>
 <body>
     <header>
@@ -34,10 +37,10 @@
         <hr>
         <section>
             <div>
-                <h1>Lista de tarefas</h1>
+                <h1 id="tarefas-titulo">Lista de tarefas</h1>
             </div>
             <form  id="adicionar">
-                <input type="text" name="adicionar" placeholder="Adicionar tarefa à lista" id="input">
+                <input class="adicionar-btn" type="text" name="adicionar" placeholder="Adicionar tarefa à lista" id="input">
                 <input type="submit" value="+">
             </form>
             <ul id="tarefas" class="tarefas">
