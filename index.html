@@ -7,22 +7,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>NeverForgetJS</title>
 </head>
 <body>
     <header>
-        <hgroup>
+        <hgroup id="mensagem">
             <h2>Aprimore sua performance,</h2>
             <h1>Dedique-se ao que realmente importa</h1>
         </hgroup>
-        <img id="img-header" src="Opções de imagens/foco.png" alt="imagem">
+        <img id="img-header" src="./img/foco.png" alt="imagem">
     </header>
     <main>
         <section class="cronometro">
             <div class="botoes">
                 <button class="botao">Foco</button>
-                <button class="botao">Descanso Curto</button >
-                <button class="botao">Descanso Longo</button >
+                <button class="botao">Descanso Curto</button>
+                <button class="botao">Descanso Longo</button>
             </div>
             <p id="cronometro"></p>
             <div class="checkbox">
@@ -41,7 +42,7 @@
                 <h1 id="tarefas-titulo">Lista de tarefas</h1>
             </div>
             <form  id="adicionar">
-                <input class="adicionar-btn" type="text" name="adicionar" placeholder="Adicionar tarefa à lista" id="input">
+                <input class="adicionar-input" type="text" name="adicionar" placeholder="Adicionar tarefa à lista" id="input">
                 <input id="adicionar-icon" type="submit" value="+">
             </form>
             <ul id="tarefas" class="tarefas">
@@ -56,3 +57,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+<img src="./img/edit.png" alt="edit">

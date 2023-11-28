@@ -40,8 +40,9 @@ function mostrarLista() {
         let index = 1;
         JSON.parse(localStorage.getItem("lista")).forEach(e => {
             const tarefa = document.createElement("li");
-            tarefa.innerHTML = `<div>${e}</div>` + "<div>X</div>";
+            tarefa.innerHTML = `<span class="material-symbols-outlined">done</span><div>${e}</div><div class="editar-excluir"><img src="./img/edit.png" alt="edit" class="editar"><div class="excluir-btn">X</div></div>`;
             tarefa.id = index;
+            tarefa.className = "tarefa";
             tarefas.appendChild(tarefa);
             index++;
         });

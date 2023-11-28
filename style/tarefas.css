@@ -18,7 +18,7 @@
     line-height: normal;
 }
 
-.adicionar-btn{
+.adicionar-input{
     display: flex;
     width: 442px;
     height: 45px;  
@@ -29,6 +29,11 @@
     border-radius: 20px;
     border: 2px solid #603AA7;
     opacity: 0.1;
+}
+
+#tarefas-container{
+    padding: 24px;
+    gap: 24px;
 }
 
 #adicionar-icon{
@@ -44,6 +49,7 @@
 
 #adicionar{
     display: flex;
+    gap: 24px;
 }
 
 

@@ -1,0 +1,27 @@
+.tarefa {
+    width: 442px;
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding: 12px;
+    padding-left: 24px;
+    align-items: center;
+}
+
+.texto {
+    color: black;
+    font-size: 24px;    
+}
+
+.editar-excluir {
+    display: flex;
+}
+
+.editar {
+    color: black;
+}
+
+.excluir-btn {
+    background-color: red;
+    border-radius: 50%;
+    padding: 10px;
+}

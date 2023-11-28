@@ -1,9 +1,18 @@
 header {
-    padding-left: 100px;
-    width: 300px;
-    font-size: x-large;
     display: flex;
+    width: 1436px;
+    height: 386px;
+    padding: 0px 74px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
 }
-.img-header{
-    
+#img-header{
+    width: 343px;
+    height: 343px;
+}
+#mensagem{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
 }

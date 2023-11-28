@@ -2,6 +2,7 @@
 @import "tarefas.css";
 @import "header.css";
 @import "cronometro.css";
+@import "tarefa.css";
 
 * {
   margin: 0;
