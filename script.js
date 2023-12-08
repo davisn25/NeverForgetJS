@@ -79,3 +79,21 @@ comecar.addEventListener('click', () => {
         clearInterval(tempo);
     }
 });
+
+const botoes = document.querySelector(".botoes");
+
+botoes.addEventListener("click", (e) => {
+    if(e.target.innerHTML == "Foco" || "Descanso Curto" || "Descanso Longo") {
+        segundo = 0;
+        e.target.classList += "focus";
+    }
+    if(e.target.innerHTML == "Foco") {
+        minuto = 5;
+    } else if(e.target.innerHTML == "Descanso Curto") {
+        minuto = 15;
+
+    } else if(e.target.innerHTML == "Descanso Longo") {
+        minuto = 25;
+    }
+    cronometro.textContent =  minuto + ":" + segundo; 
+});
