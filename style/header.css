@@ -1,6 +1,6 @@
 header {
     display: flex;
-    width: 1436px;
+    width: 100%;
     height: 386px;
     padding: 0px 74px;
     justify-content: space-between;
@@ -15,4 +15,8 @@ header {
     display: flex;
     flex-direction: column;
     width: 200px;
+}
+#mensagem-container{
+    display: flex;
+    justify-content: space-around;
 }

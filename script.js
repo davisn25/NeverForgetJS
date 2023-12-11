@@ -13,6 +13,7 @@ adicionar.addEventListener("submit", (e) => {
     if(input.value) {
         adicionarTarefa();
         mostrarLista();
+        input.value = "";
     }
 })
 
@@ -40,7 +41,7 @@ function mostrarLista() {
         let index = 1;
         JSON.parse(localStorage.getItem("lista")).forEach(e => {
             const tarefa = document.createElement("li");
-            tarefa.innerHTML = `<span class="material-symbols-outlined">done</span><div>${e}</div><div class="editar-excluir"><img src="./img/edit.png" alt="edit" class="editar"><div class="excluir-btn">X</div></div>`;
+            tarefa.innerHTML = `<span class="material-symbols-outlined">done</span><div class="texto">${e}</div><div class="editar-excluir"><div class="excluir-btn">X</div></div>`;
             tarefa.id = index;
             tarefa.className = "tarefa";
             tarefas.appendChild(tarefa);
@@ -81,11 +82,18 @@ comecar.addEventListener('click', () => {
 });
 
 const botoes = document.querySelector(".botoes");
+const botao = document.getElementsByClassName("botao");
+const botaoList = Array.prototype.slice.call(botao);
 
 botoes.addEventListener("click", (e) => {
-    if(e.target.innerHTML == "Foco" || "Descanso Curto" || "Descanso Longo") {
+    if(e.target.tagName == "BUTTON") {
+        var tract = botaoList;
+        botaoList.splice(1, e.target);
+        tract.forEach(el => {
+            el.classList.remove("focus");
+        });
+        e.target.classList.add("focus");
         segundo = 0;
-        e.target.classList += "focus";
     }
     if(e.target.innerHTML == "Foco") {
         minuto = 5;
